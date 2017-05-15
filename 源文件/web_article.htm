@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="shortcut icon" href="../../../images/favicon.ico">
+  <title>小于个人博客</title>
+  <link type="text/css" rel="stylesheet" href="../../../css/common.css"/>
+  <link type="text/css" rel="stylesheet" href="../../../css/publicright.css"/>
+  <style type="text/css">
+	#box .con .arcleft{width:780px;min-height:500px;height:auto;margin:20px 10px;float:left;}
+	#box .con .arcleft h2{color:#a25100;border-bottom:1px solid #ddd;text-align:center;line-height:35px;display:block;width:770px;height:50px;margin:0px auto;}
+	#box .con .a_time{width:100%;height:35px;border-bottom:1px dashed #ddd;line-height:35px;text-indent:20px;color:#7c7c7c;font-size:15px;}
+	#box .con .a_time ._time{width:110px;height:35px;background:url("../../../images/newsbg02.png") no-repeat left center;float:left;margin-left:150px;}
+	#box .con .a_time span{margin-left:30px;}
+	#box .con .arcleft .art{letter-spacing:1px;text-indent:34px;font-size:16px;line-height:24px;padding-left:5px;margin-top:40px;padding-right:10px;}
+	#box .con .arcleft img{margin:10px auto;}
+	#box .con .arcleft .prenext{width:400px;height:75px;font-size:15px;line-height:22px;margin:75px 12px;}
+	#box .con .arcleft .prenext a{text-decoration:none;color:#6c6c6c;}
+	#box .con .arcleft .prenext a:hover{color:#404040;}
+	#ds-thread{float:left;}
+  </style>
+
+ </head>
+ <body>
+  <div id="box">
+       <div class="con"> 
+	    <div class="Top">
+		  <div class="Topleft">
+		    <img src="../../../images/title2.jpg" title='小于blog'/>
+		  </div>
+		  <div class="Topright">
+		      <div class="bt">其实   快乐就在我们身边</div>
+		      <div class="bt2">只要我们仔细去发现</div>
+		      <img src="../../../images/sd.gif" height='110px' class="sd">
+		 </div>
+	   </div>
+		   <div class="daohang">
+		     <div class="zj"></div>
+	           <!--dh start-->		  
+		       <ul>
+		         <li><a href="../../../../index.html">首页</a></li>
+			     <li><a href="{dede:type typeid='1'}[field:typelink /]{/dede:type}" class="turn">网页前端</a></li>
+			     <li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">科技生活</a></li>
+			     <li><a href="{dede:type typeid='3'}[field:typelink /]{/dede:type}">生活记录</a></li>
+			     <li><a href="{dede:type typeid='4'}[field:typelink /]{/dede:type}">实用模板</a></li>
+			     <li><a href="{dede:type typeid='5'}[field:typelink /]{/dede:type}">留言板</a></li>
+                 <li><a href="{dede:type typeid='6'}[field:typelink /]{/dede:type}">关于我</a></li>
+		       </ul>
+		    </div>
+		    <div class="right">
+		       <!--search start-->
+		       <div class="ss">
+                    <form name="formsearch" action="../../../../plus/search.php" method="post">
+                        <input name="q" type="text" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"  class="sousuo"/>   
+                        <input value="搜 索" type="submit" class="sous"/>
+                   </form>			   
+			   </div>
+			   <div class="bq">
+			       <ul>
+				     <li><a href="{dede:type typeid='1'}[field:typelink /]{/dede:type}">网页前端</a></li>
+					 <li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">科技人生</a></li>
+					 <li><a href="{dede:type typeid='3'}[field:typelink /]{/dede:type}">生活记录</a></li>
+                                         <li><a href="{dede:type typeid='4'}[field:typelink /]{/dede:type}">实用模板</a></li>
+				   </ul>
+			   </div>
+		       <div class="tZ">
+			       站内通知：<img src="../../../images/tz.gif" width='26px' height='26px'>
+			   </div>
+			     <div class="haha">小于blog正式发布了，欢迎各位朋友访问并在此<a href="{dede:type typeid='5'}[field:typelink /]{/dede:type}">留言</a>。小于在此感谢！</div>
+           </div>
+		    <div class="xiay">
+		     <div class="xiaytop"><ul><li class="butt">文章排行</li><li>最新文章</li></div>
+			  <div class="transform-son">
+			   <div class="xiaydown">
+		    	 {dede:arclist row='6' titlelen='40' orderby='click' subday=' typeid='1,2,4'}
+				  <div class="xiay0"><span><a href="[field:arcurl/]">[field:title/]</a></span></div>   
+				 {/dede:arclist}
+				</div>
+			  </div>
+			 <div class="transform">
+			  <div class="xiaydown">
+		    	 {dede:arclist row='6' titlelen='40' orderby='pubdate' subday='' typeid='1,2,4'}
+				  <div class="xiay0"><span><a href="[field:arcurl/]">[field:title/]</a></span></div>   
+				 {/dede:arclist}
+			  </div>
+			 </div>
+		  </div>
+		  <div class="arcleft">
+		      <h2>{dede:field.title/}</h2>
+			  <div class="a_time">
+			      <div class="_time">{dede:field name='pubdate' function='GetDateMk(@me)'/}</div>
+				  <span>编辑：{dede:field.writer/}</span>
+				  <span>文章来源：{dede:field.source/}</span>
+			  </div>
+		      <div class="art">{dede:field.body/}</div>
+			  <div class="prenext">
+			      {dede:prenext get='pre'/}<br/>
+			      {dede:prenext get='next'/}
+			  </div> 
+
+          </div>
+          <div class="yq">
+			    <div class="yqlj">友情链接</div>
+		        <a href="http://www.baidu.com" target="_blank">百度</a>
+				<a href="http://weibo.com/" target="_blank">微博</a>
+		    </div>
+			<p id="back-to-top"><a href="#top"><span></span></a></p>
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="{dede:field name='aid'}{/dede:field}" data-title="{dede:field.title/}" data-url="{dede:field name='typeurl' function=”GetTypeName(@me)”/} "></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yc609"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+    </div>
+</div>
+	
+
+	<p class="ft-copyright">小于博客 &copy; by 小于 丨 吉ICP备15004131号</p>
+	<!-- Share Button BEGIN -->
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","copy","weixin","qzone","sqq","tsina","bdysc","renren","tqq","bdxc","kaixin001","tqf","tieba","douban","bdhome","huaban","youdao","mail"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+   <!--Share Button END -->
+   <script type="text/javascript" src="../../../js/jquery.js"></script>
+   <script type="text/javascript" src="../../../js/index.js"></script>
+   <script type="text/javascript" src="../../../js/scroll2.js"></script>
+   
+ </body>
+</html>

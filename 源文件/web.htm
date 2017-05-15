@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>小于个人博客</title>
+  <link type="text/css" rel="stylesheet" href="../css/common.css"/>
+  <link type="text/css" rel="stylesheet" href="../css/publicright.css"/>
+ </head>
+ <body>
+  <div id="box">
+       <div class="con"> 
+	    <div class="Top">
+		  <div class="Topleft">
+		    <img src="../images/title2.jpg" title='小于blog'/>
+		  </div>
+		  <div class="Topright">
+		      <div class="bt">其实   快乐就在我们身边</div>
+		      <div class="bt2">只要我们仔细去发现</div>
+		      <img src="../images/sd.gif" height='110px' class="sd">
+		 </div>
+	   </div>
+		   <div class="daohang">
+		     <div class="zj"></div>
+	           <!--dh start-->		  
+		       <ul>
+		         <li><a href="../../index.html">首页</a></li>
+			     <li><a href="{dede:type typeid='1'}[field:typelink /]{/dede:type}" class="turn">网页前端</a></li>
+			     <li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">科技生活</a></li>
+			     <li><a href="{dede:type typeid='3'}[field:typelink /]{/dede:type}">生活记录</a></li>
+			     <li><a href="{dede:type typeid='4'}[field:typelink /]{/dede:type}">实用模板</a></li>
+			     <li><a href="{dede:type typeid='5'}[field:typelink /]{/dede:type}">留言板</a></li>
+                 <li><a href="{dede:type typeid='6'}[field:typelink /]{/dede:type}">关于我</a></li>
+		       </ul>
+		    </div>
+		    <div class="right">
+		       <!--search start-->
+		       <div class="ss">
+                    <form name="formsearch" action="../../plus/search.php" method="post">
+                        <input name="q" type="text" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"  class="sousuo"/>   
+                        <input value="搜 索" type="submit" class="sous"/>
+                   </form>			   
+			   </div>
+			   <div class="bq">
+			       <ul>
+				     <li><a href="{dede:type typeid='1'}[field:typelink /]{/dede:type}">网页前端</a></li>
+					 <li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">科技人生</a></li>
+					 <li><a href="{dede:type typeid='3'}[field:typelink /]{/dede:type}">生活记录</a></li>
+                                         <li><a href="{dede:type typeid='4'}[field:typelink /]{/dede:type}">实用模板</a></li>
+				   </ul>
+			   </div>
+		       <div class="tZ">
+			       站内通知：<img src="../images/tz.gif" width='26px' height='26px'>
+			   </div>
+			     <div class="haha">小于blog正式发布了，欢迎各位朋友访问并在此<a href="{dede:type typeid='5'}[field:typelink /]{/dede:type}">留言</a>。小于在此感谢！</div>
+           </div>
+         <div class="article" style="margin-top:0px;">
+		     <div class="articletitle">网页前端<span>阅读使人富有</span></div>
+
+			 {dede:arclist row='20' pagesize='20' titlelen='100'}
+			 <div class="_article">
+			     <div class="tp"><a href="[field:arcurl/]"><img src="[field:picname /]" width='195px' height='150px'/></a></div>
+				 <div class="ar">
+				     <h3><p><a href='[field:arcurl/]'>[field:title/]</a></p></h3>
+					     <p class="neirong">[field:description function='cn_substr(@me,400)'/]...</p>
+						 <div class="author"><span class="author1"><a href="#">[field:typename /] </a></span><span class="author2">[field:pubdate function=strftime('%Y-%m-%d',@me)/]</span><span class="author3">浏览([field:click /])</span></div>
+				</div>
+			 </div>		 
+			 {/dede:arclist}
+
+		 </div>		
+		 <div class="xiay">
+		     <div class="xiaytop"><ul><li class="butt">文章排行</li><li>最新文章</li></div>
+			  <div class="transform-son">
+			   <div class="xiaydown">
+		    	 {dede:arclist row='6' titlelen='40' orderby='click' subday='' typeid='1,2,4'}
+				  <div class="xiay0"><span><a href="[field:arcurl/]">[field:title/]</a></span></div>   
+				 {/dede:arclist}
+				</div>
+			  </div>
+			 <div class="transform">
+			  <div class="xiaydown">
+		    	 {dede:arclist row='6' titlelen='40' orderby='pubdate' subday='' typeid='1,2,4'}
+				  <div class="xiay0"><span><a href="[field:arcurl/]">[field:title/]</a></span></div>   
+				 {/dede:arclist}
+			  </div>
+			 </div>
+		  </div>
+          <div class="yq">
+			    <div class="yqlj">友情链接</div>
+		        <a href="http://www.baidu.com" target="_blank">百度</a>
+				<a href="http://weibo.com/" target="_blank">微博</a>
+		    </div>
+			<p id="back-to-top"><a href="#top"><span></span></a></p>
+
+       </div>
+	</div>
+
+	<p class="ft-copyright">小于博客 &copy; by 小于 丨 吉ICP备15004131号</p>	
+
+	<!-- Share Button BEGIN -->
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","copy","weixin","qzone","sqq","tsina","bdysc","renren","tqq","bdxc","kaixin001","tqf","tieba","douban","bdhome","huaban","youdao","mail"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+   <!--Share Button END -->
+   <script type="text/javascript" src="../js/jquery.js"></script>
+   <script type="text/javascript" src="../js/index.js"></script>
+   <script type="text/javascript" src="../js/scroll2.js"></script>
+ </body>
+</html>

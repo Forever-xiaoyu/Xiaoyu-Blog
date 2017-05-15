@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>小于个人博客</title>
+  <meta charset="UTF-8">
+  <meta name="Author" content="小于">
+  <meta name="Keywords" content="小于个人博客，小于">
+  <meta name="Description" content="小于博客，专注于分享web知识的博客">
+   <link type="text/css" rel="stylesheet" href="../css/common.css"/>
+   <link type="text/css" rel="stylesheet" href="../css/life.css"/>
+   <style type="text/css">
+	body{background:url("../images/b_g.jpg") no-repeat center fixed;z-index:-1;}
+        .pagelist{width:600px;margin:40px auto;color:#fff;height:30px;}
+        .pagelist li{float:left;list-style:none;margin-left:40px;}
+        .pagelist li a{color:#fff;text-decoration:none;border:1px solid #fff;border-radius:50%;padding:2px 4px;}
+        .pagelist li a:hover{color:orange;border:1px solid orange;}
+   </style>
+ </head>
+ <body>
+  <div id="box">
+     <div class="con"> 
+	    <div class="Top">
+		  <div class="Topleft">
+		    <img src="../images/title2.jpg" title='小于blog'/>
+		  </div>
+		  <div class="Topright">
+		      <div class="bt">其实   快乐就在我们身边</div>
+		      <div class="bt2">只要我们仔细去发现</div>
+		      <img src="../images/sd.gif" height='110px' class="sd">
+		 </div>
+	   </div>
+		   <div class="daohang">
+		     <div class="zj"></div>
+	           <!--dh start-->		  
+		       <ul>
+		         <li><a href="../../index.html">首页</a></li>
+			     <li><a href="{dede:type typeid='1'}[field:typelink /]{/dede:type}">网页前端</a></li>
+			     <li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">科技生活</a></li>
+			     <li><a href="{dede:type typeid='3'}[field:typelink /]{/dede:type}" class="turn">生活记录</a></li>
+			     <li><a href="{dede:type typeid='4'}[field:typelink /]{/dede:type}">实用模板</a></li>
+			     <li><a href="{dede:type typeid='5'}[field:typelink /]{/dede:type}">留言板</a></li>
+                 <li><a href="{dede:type typeid='6'}[field:typelink /]{/dede:type}">关于我</a></li>
+		       </ul>
+		    </div>
+		  <div id="Main">
+	        <div class="head">
+	          <img src="../images/3.jpg"width="130"/>
+	          <p>与其抱怨不如去接受</p>
+	        </div>
+	      <ul class="List">
+		   {dede:list row='20' pagesize='10' titlelen='100' addfields='body' channelid='1'}
+	       <li>
+		      <font>[field:pubdate function=strftime('%Y年%m月%d日',@me)/]</font>
+		      <img src="../images/8.jpg" width="" height="20px" class="dir"/>
+		      <span></span>
+			  <img src="../images/jt.png" width="" height="20px" class="jt"/>
+		     <div class="More">
+              <h3>[field:title/]</h3>
+			  <p>[field:body/] </p>
+		     </div>
+		   </li>
+		   {/dede:list}
+		 </ul>
+        </div>
+          <div class="pagelist">{dede:pagelist listsize='3' listitem='index pre pageno next end '/} </div>
+
+			<p id="back-to-top"><a href="#top"><span></span></a></p>
+	</div>
+</div>
+<p class="ft-copyright">小于博客 &copy; by 小于 丨 吉ICP备15004131号</p>	
+	<!-- Share Button BEGIN -->
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","copy","weixin","qzone","sqq","tsina","bdysc","renren","tqq","bdxc","kaixin001","tqf","tieba","douban","bdhome","huaban","youdao","mail"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+   <!--Share Button END -->
+   <script type="text/javascript" src="../js/jquery.js"></script>
+   <script type="text/javascript" src="../js/index.js"></script>
+ </body>
+</html>
