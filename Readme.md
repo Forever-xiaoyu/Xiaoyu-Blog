@@ -1,6 +1,11 @@
 
-源文件为每个栏目及文章的模板文件
+所用技术栈：
+  html5/css3/jquery
+  dedeCMS
+项目文件中template为模板文件
 
-博客网址为 yc609.cn
-
-网站后台基于dedeCMS进行开发
+------------------------------------
+Technology stack:
+  html5/css3/jquery
+  dedeCMS
+template folder in the project is the template files
